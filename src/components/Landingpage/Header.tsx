@@ -77,9 +77,13 @@ export default function Header() {
                 className="rounded-lg"
                 priority
               />
-              <span className="text-lg font-semibold text-black">
+              <motion.span
+                className="text-lg font-semibold text-black"
+                whileHover={{ color: "#fae8b4" }}
+                transition={{ duration: 0.2 }}
+              >
                 CaviteVenture
-              </span>
+              </motion.span>
             </Link>
 
             <button
@@ -102,7 +106,11 @@ export default function Header() {
                 transition={{ staggerChildren: 0.1 }}
                 className="flex gap-6 items-center"
               >
-                <motion.div variants={menuVariants}>
+                <motion.div
+                  variants={menuVariants}
+                  whileHover={{ color: "#fae8b4", textShadow: "0 0 5px #fae8b4, 0 0 10px #fae8b4, 0 0 15px #fae8b4" }}
+                  transition={{ duration: 0.3 }}
+                >
                   <Link
                     href="/"
                     className="hover:text-[#fae8b4] transition-colors duration-300"
@@ -110,7 +118,11 @@ export default function Header() {
                     Home
                   </Link>
                 </motion.div>
-                <motion.div variants={menuVariants}>
+                <motion.div
+                  variants={menuVariants}
+                  whileHover={{ color: "#fae8b4", textShadow: "0 0 5px #fae8b4, 0 0 10px #fae8b4, 0 0 15px #fae8b4" }}
+                  transition={{ duration: 0.3 }}
+                >
                   <Link
                     href="/about"
                     className="hover:text-[#fae8b4] transition-colors duration-300"
@@ -118,7 +130,11 @@ export default function Header() {
                     About
                   </Link>
                 </motion.div>
-                <motion.div variants={menuVariants}>
+                <motion.div
+                  variants={menuVariants}
+                  whileHover={{ color: "#fae8b4", textShadow: "0 0 5px #fae8b4, 0 0 10px #fae8b4, 0 0 15px #fae8b4" }}
+                  transition={{ duration: 0.3 }}
+                >
                   <button
                     onClick={() => setIsModalOpen(true)} // Opens the modal
                     className="hover:text-[#fae8b4] transition-colors duration-300"
@@ -126,7 +142,11 @@ export default function Header() {
                     Event
                   </button>
                 </motion.div>
-                <motion.div variants={menuVariants}>
+                <motion.div
+                  variants={menuVariants}
+                  whileHover={{ color: "#fae8b4", textShadow: "0 0 5px #fae8b4, 0 0 10px #fae8b4, 0 0 15px #fae8b4" }}
+                  transition={{ duration: 0.3 }}
+                >
                   <Link href="/signup">
                     <button className="bg-black text-white px-4 py-2 rounded-lg font-medium hover:bg-black/80 transition-colors duration-200">
                       Explore for Free
